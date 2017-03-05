@@ -1,6 +1,15 @@
+
 .title {
 	text-align: center;
 	padding-bottom: 50px;
+	background-image: url("Logo.png");
+	background-position: 50% 50%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 75%;
+	height: 350px;
+	display: inline-block;
+	
 }
 
 .answers {
