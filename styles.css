@@ -22,7 +22,7 @@
 }
 
 .textbox {
-	margin: 10px;
+	margin: 17px;
 }
 
 .button {
@@ -53,4 +53,31 @@ html {
 .submit {
 	text-align: center;
 	padding-bottom: 30px;
+}
+
+
+#submit {
+	background-color: #F1CF51;
+	width: 100%;
+}
+
+#submit:hover {
+	background-color: #EEBB1A;
+}
+
+.button {
+	background-color: #F7F7F7;
+	width: 60%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px solid grey;
+	border-radius: 15px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #B9B9B9;
+		
 }
