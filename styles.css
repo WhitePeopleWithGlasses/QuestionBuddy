@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-.jumbotron{
-	color: #b0e5e7;
 
-}
-=======
-=======
 .topPusher {
 	height: 50px;
 }
 
-
->>>>>>> 314735e6e0db7460d05aafd2e11ce641a087630c
 .title {
 	text-align: center;
 	padding-bottom: 50px;
@@ -31,7 +22,7 @@
 }
 
 .textbox {
-	margin: 10px;
+	margin: 17px;
 }
 
 .button {
@@ -45,9 +36,6 @@
 .questions {
 	margin-top: 10px;
 }
-<<<<<<< HEAD
->>>>>>> 944c52a05bb3d351d0a278bdaf849505ecee5f13
-=======
 
 .container {
 	background-color: white;
@@ -66,4 +54,29 @@ html {
 	text-align: center;
 	padding-bottom: 30px;
 }
->>>>>>> 314735e6e0db7460d05aafd2e11ce641a087630c
+
+#submit {
+	background-color: #F1CF51;
+	width: 100%;
+}
+
+#submit:hover {
+	background-color: #EEBB1A;
+}
+
+.button {
+	background-color: #F7F7F7;
+	width: 60%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px solid grey;
+	border-radius: 15px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #B9B9B9;
+		
+}
