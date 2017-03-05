@@ -1,7 +1,7 @@
+
 .topPusher {
 	height: 50px;
 }
-
 
 .title {
 	text-align: center;
@@ -44,7 +44,8 @@
 }
 
 .questions {
-	margin-top: 10px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 .container {
@@ -65,10 +66,10 @@ html {
 	padding-bottom: 30px;
 }
 
-
 #submit {
 	background-color: #F1CF51;
 	width: 100%;
+	margin-top: 50px;
 }
 
 #submit:hover {
@@ -80,14 +81,26 @@ html {
 	width: 60%;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	border: 1px solid grey;
-	border-radius: 15px;
-	margin-bottom: 15px;
-	margin-top: 15px;
+	border-radius: 16px;
+	margin-bottom: 16px;
+	margin-top: 16px;
 	cursor: pointer;
 }
 
 .button:hover {
 	background-color: #B9B9B9;
+}
 
+#text {
+	text-align: center;
+}
+
+#text h1 {
+	font-family: 'Kanit', sans-serif;
+	font-weight: 200;
+	color: #F1CF51;
+}
+
+#text h2 {
+	color: #BCBCBC;
 }
