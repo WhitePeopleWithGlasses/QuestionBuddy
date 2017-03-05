@@ -11,40 +11,60 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" 			crossorigin="anonymous">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
- <script>
-	 var questionsArray = [
-              "What is your mother's maiden name?",  
-              "What was your first pet's name?",
-              "What do you use to brush your teeth?",
-              "What street did you grow up on?",
-              "Who was your childhood hero?",
-              "In which drawer do you keep your dish towels?",
-              "In what year was your first child born?"
-            ];
-	 
-	 function getQuestions() {
-  var arrayLength = questionsArray.length;
-  var questionSet = [];
-  
+	<script>
+	var questionsArray = [
+		"What is your mother's maiden name?",
+		"What was your first pet's name?",
+		"What do you use to brush your teeth?",
+		"What street did you grow up on?",
+		"Who was your childhood hero?",
+		"In which drawer do you keep your dish towels?",
+		"In what year was your first child born?"
+	];
 
-  for(var question = 0; question < 5; question++) {
-	 var rand = Math.floor(Math.random() * arrayLength);
-    questionSet.push("<div class='questions'><h4>" + questionsArray[rand] + "</h4></div>")
-  }
+	function getQuestions() {
+		var arrayLength = questionsArray.length;
+		var questionSet = [];
 
-  document.write((questionSet).join(""));
-};
-				</script>
+
+		for(var question = 0; question < 5; question++) {
+			var rand = Math.floor(Math.random() * arrayLength);
+			questionSet.push("<div class='questions'><h4>" + questionsArray[rand] + "</h4></div>")
+		}
+
+		document.write((questionSet).join(""));
+	};
+
+	function notSure1() {
+		document.getElementById("notSure1").value = "Not Sure";
+	};
+
+	function notSure2() {
+		document.getElementById("notSure2").value = "Not Sure";
+	};
+
+	function notSure3() {
+		document.getElementById("notSure3").value = "Not Sure";
+	};
+
+	function notSure4() {
+		document.getElementById("notSure4").value = "Not Sure";
+	};
+
+	function notSure5() {
+		document.getElementById("notSure5").value = "Not Sure";
+	};
+	</script>
 
 </head>
 <body>
 	<div class="col-lg-12">
 		<div class="col-lg-12 title">
-			
+
 		</div>
 		<div class="col-lg-12 questionHolder">
 			<div class="col-sm-3 col-lg-5 questions">
@@ -53,23 +73,24 @@
 					getQuestions();
 					</script>
 				</div>
-				
+
 			</div>
-			<div class="col-sm-3 col-lg-5 answers">
-				<input class="textbox" type="text" name="answer1"><br>
-				<input class="textbox" type="text" name="answer2"><br>
-				<input class="textbox" type="text" name="answer3"><br>
-				<input class="textbox" type="text" name="answer4"><br>
-				<input class="textbox" type="text" name="answer5">
+			<div class="col-lg-5 answers">
+				<input id="notSure1" class="textbox" type="text" name="answer1"><br>
+				<input id="notSure2" class="textbox" type="text" name="answer2"><br>
+				<input id="notSure3" class="textbox" type="text" name="answer3"><br>
+				<input id="notSure4" class="textbox" type="text" name="answer4"><br>
+				<input id="notSure5" class="textbox" type="text" name="answer5">
 			</div>
-			<div class="col-sm-2 col-lg-2 buttons">
-				<button class="button" type="button" onclick="">Not Sure</button><br>
-				<button class="button" type="button" onclick="">Not Sure</button><br>
-				<button class="button" type="button" onclick="">Not Sure</button><br>
-				<button class="button" type="button" onclick="">Not Sure</button><br>
-				<button class="button" type="button" onclick="">Not Sure</button>
+
+			<div class="col-lg-2 buttons">
+				<button class="button" type="button" onclick="notSure1()">Not Sure</button><br>
+				<button class="button" type="button" onclick="notSure2()">Not Sure</button><br>
+				<button class="button" type="button" onclick="notSure3()">Not Sure</button><br>
+				<button class="button" type="button" onclick="notSure4()">Not Sure</button><br>
+				<button class="button" type="button" onclick="notSure5()">Not Sure</button>
 			</div>
 		</div>
 	</div>
-	</body>
-</html> 
+</body>
+</html>
