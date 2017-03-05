@@ -1,3 +1,7 @@
+.topPusher {
+	height: 50px;
+}
+
 
 .title {
 	text-align: center;
@@ -31,4 +35,22 @@
 
 .questions {
 	margin-top: 10px;
+}
+
+.container {
+	background-color: white;
+	border-radius: 50px;
+}
+
+html {
+	background-color: #9DDDDF;
+}
+
+.errything {
+	background-color: #9DDDDF;
+}
+
+.submit {
+	text-align: center;
+	padding-bottom: 30px;
 }
