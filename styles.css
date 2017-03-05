@@ -96,3 +96,27 @@ html {
 	color: #BCBCBC;
 }
 
+.graph {
+	background-image: url("pie.png");
+	height: 400px;
+	background-size: contain; 
+	background-repeat: no-repeat;
+	padding-top: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#export {
+	padding: 20px;
+	
+	text-align: center;
+	margin-top: 30px;
+	background-color: #F1CF51;
+	
+	
+}
+
+#export:hover {
+	background-color: #EEBB1A;
+}
+
