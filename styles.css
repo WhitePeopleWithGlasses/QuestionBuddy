@@ -13,7 +13,7 @@
 	width: 75%;
 	height: 350px;
 	display: inline-block;
-	
+
 }
 
 .answers {
@@ -33,6 +33,16 @@
 	text-align: center;
 }
 
+#bg {
+	background-image: url("bg.jpg") !important;
+	background-repeat: no-repeat;
+	background-color: transparent !important;
+}
+
+#linkText {
+	color: #aaaaaa;
+}
+
 .questions {
 	margin-top: 10px;
 }
@@ -47,7 +57,7 @@ html {
 }
 
 .errything {
-	background-color: #9DDDDF;
+	background-color: transparent;
 }
 
 .submit {
@@ -79,5 +89,5 @@ html {
 
 .button:hover {
 	background-color: #B9B9B9;
-		
+
 }
