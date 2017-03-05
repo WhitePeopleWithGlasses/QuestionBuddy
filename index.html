@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Question Buddy</title>
-	<script src="jquery-3.1.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="javascript.js" ></script>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<!-- Latest compiled and minified CSS -->
@@ -13,6 +13,33 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+ <script>
+	 var questionsArray = [
+              "What is your mother's maiden name?",  
+              "What was your first pet's name?",
+              "What do you use to brush your teeth?",
+              "What street did you grow up on?",
+              "Who was your childhood hero?",
+              "In which drawer do you keep your dish towels?",
+              "In what year was your first child born?"
+            ];
+	 
+	 function getQuestions() {
+  var arrayLength = questionsArray.length;
+  var questionSet = [];
+  
+
+  for(var question = 0; question < 5; question++) {
+	 var rand = Math.floor(Math.random() * arrayLength);
+    questionSet.push("<div class='questions'><h4>" + questionsArray[rand] + "</h4></div>")
+  }
+
+  document.write((questionSet).join(""));
+};
+				</script>
+
 </head>
 <body>
 	<div class="col-lg-12">
@@ -20,17 +47,22 @@
 			<h1>Question Buddy</h1>
 		</div>
 		<div class="col-lg-12 questionHolder">
-			<div class="col-lg-4 questions">
-				<div id="questionOutput"></div>
+			<div class="col-lg-5 questions">
+				<div id="questionOutput">
+					<script>
+					getQuestions();
+					</script>
+				</div>
+				
 			</div>
-			<div class="col-lg-4 answers">
+			<div class="col-lg-5 answers">
 				<input class="textbox" type="text" name="answer1"><br>
 				<input class="textbox" type="text" name="answer2"><br>
 				<input class="textbox" type="text" name="answer3"><br>
 				<input class="textbox" type="text" name="answer4"><br>
 				<input class="textbox" type="text" name="answer5">
 			</div>
-			<div class="col-lg-4 buttons">
+			<div class="col-lg-2 buttons">
 				<button class="button" type="button" onclick="">Not Sure</button><br>
 				<button class="button" type="button" onclick="">Not Sure</button><br>
 				<button class="button" type="button" onclick="">Not Sure</button><br>
