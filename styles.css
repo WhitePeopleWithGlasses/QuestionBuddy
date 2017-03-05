@@ -1,0 +1,21 @@
+.title {
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.answers {
+	text-align: center;
+	display: inline-block;
+}
+
+.textbox {
+	margin: 10px;
+}
+
+.button {
+	margin: 10px;
+}
+
+.buttons {
+	text-align: center;
+}
