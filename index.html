@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Question Buddy</title>
+	<title>Todays Questions</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="javascript.js" ></script>
 	<link rel="stylesheet" type="text/css" href="styles.css">
@@ -62,12 +62,17 @@
 
 </head>
 <body>
-	<div class="col-lg-12">
+	<div class="col-lg-12 errything">
+		<div class="col-lg-12 topPusher"></div>
+		<div class="col-lg-1 pusher"></div>
+		<div class="col-lg-10 container">
 		<div class="col-lg-12 title">
-			<h1>QuestionBuddy</h1>
+
 		</div>
+		
 		<div class="col-lg-12 questionHolder">
-			<div class="col-lg-5 questions">
+			<div class="col-lg-1 lilPusher"></div>
+			<div class="col-lg-4 questions">
 				<div id="questionOutput">
 					<script>
 					getQuestions();
@@ -75,12 +80,12 @@
 				</div>
 
 			</div>
-			<div class="col-lg-5 answers">
-				<input id="notSure1" class="textbox" type="text" name="answer1"><br>
-				<input id="notSure2" class="textbox" type="text" name="answer2"><br>
-				<input id="notSure3" class="textbox" type="text" name="answer3"><br>
-				<input id="notSure4" class="textbox" type="text" name="answer4"><br>
-				<input id="notSure5" class="textbox" type="text" name="answer5">
+			<div class="col-lg-4 answers">
+				<input id="notSure1" class="textbox" type="text" size="50" name="answer1"><br>
+				<input id="notSure2" class="textbox" type="text" size="50" name="answer2"><br>
+				<input id="notSure3" class="textbox" type="text" size="50" name="answer3"><br>
+				<input id="notSure4" class="textbox" type="text" size="50" name="answer4"><br>
+				<input id="notSure5" class="textbox" type="text" size="50" name="answer5">
 			</div>
 
 			<div class="col-lg-2 buttons">
@@ -90,7 +95,13 @@
 				<button class="button" type="button" onclick="notSure4()">Not Sure</button><br>
 				<button class="button" type="button" onclick="notSure5()">Not Sure</button>
 			</div>
+			<div class="col-lg-1 lilPusher"></div>
 		</div>
+		<div class="col-lg-12 submit">
+			<button class="button" type="button" onclick="">Submit</button>
+		</div>
+		</div>
+		<div class="col-lg-1 pusher"></div>
 	</div>
 </body>
 </html>

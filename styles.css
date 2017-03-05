@@ -1,12 +1,28 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 .jumbotron{
 	color: #b0e5e7;
 
 }
 =======
+=======
+.topPusher {
+	height: 50px;
+}
+
+
+>>>>>>> 314735e6e0db7460d05aafd2e11ce641a087630c
 .title {
 	text-align: center;
 	padding-bottom: 50px;
+	background-image: url("Logo.png");
+	background-position: 50% 50%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 75%;
+	height: 350px;
+	display: inline-block;
+	
 }
 
 .answers {
@@ -29,4 +45,25 @@
 .questions {
 	margin-top: 10px;
 }
+<<<<<<< HEAD
 >>>>>>> 944c52a05bb3d351d0a278bdaf849505ecee5f13
+=======
+
+.container {
+	background-color: white;
+	border-radius: 50px;
+}
+
+html {
+	background-color: #9DDDDF;
+}
+
+.errything {
+	background-color: #9DDDDF;
+}
+
+.submit {
+	text-align: center;
+	padding-bottom: 30px;
+}
+>>>>>>> 314735e6e0db7460d05aafd2e11ce641a087630c
